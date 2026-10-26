@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val imie = findViewById<EditText>(R.id.Imie).text
+        val imie = findViewById<EditText>(R.id.Imie).text.toString()
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
         val selectedId = radioGroup.checkedRadioButtonId
         var cena = 0

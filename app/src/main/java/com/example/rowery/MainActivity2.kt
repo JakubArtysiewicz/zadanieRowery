@@ -16,7 +16,7 @@ class MainActivity2 : AppCompatActivity() {
         val button = findViewById<Button>(R.id.button)
         val dziekujemy = findViewById<TextView>(R.id.Dziekujemy)
         val imie = intent.getStringExtra("imie")
-        dziekujemy.text = "Dziękujemy " + imie
+        dziekujemy.text = "Dziękujemy " + (imie ?: "")
         button.setOnClickListener {
             finish()
         }
